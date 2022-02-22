@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+}
+
+header{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+ol{
+    list-style: none;
+}
+
+/* Cabeçalho */
+
+.logotipo{
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.navegacao{
+    display: flex;
+    
+}
+
+.navegacao li{
+    list-style: none;
+}
+
+.navegacao a{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 40px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.navegacao a:hover{
+    border: 1px solid red;
+}
+
+/* Cabeçalho */
+
+/* Conteúdo */
+
+.bicicleta{
+    max-width: 100%;
+}
+
+.container01{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container01 main{
+    background-color: #fff;
+    padding: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.titulo, .paragrafo, .botao{
+    margin: 0px;
+}
+
+.titulo{
+    position: relative;
+}
+
+.titulo::after{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    top: -45px;
+    right: -70px;
+}
+
+.paragrafo{
+    text-align: center;
+}
+
+.botao{
+    background-color: #ee2211;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 15px 30px;
+}
+
+.botao:hover{
+    background-color: #900;
+}
+
+/* Conteúdo */
+
+/* Conteúdo 2 */
+
+.subtitulo{
+    font-size: 4rem;
+    color: #c6c6c6;
+    padding: 30px;
+    background-image: url("/assets/img/onda.svg");
+}
+
+.container-titulo{
+    background-repeat: no-repeat;
+    display: grid;
+    align-self: center;
+}
+
+.container-vantagens{
+    background-color: #fff;
+}
+
+.container-vantagens ol li:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.container-vantagens ol{
+    padding: 10px;
+}
+
+.vantagens{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+}
+
+.paragrafo-vantagens{
+    grid-column: 2;
+}
+
+.icone{
+    padding: 17px 10px;
+}
+
+.container-vantagens ol li:hover{
+    border-left: 4px solid red;
+}
+
+/* Conteúdo 2 */
+
+/* Rodapé */
+
+footer{
+    background-color: #eeee;
+    text-align: center;
+}
+
+/* Rodapé */
