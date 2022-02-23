@@ -44,6 +44,8 @@ ul{
     padding: 1rem 2rem;
     border-radius: 0.25rem;
     color: #000;
+    border: 0px solid transparent;
+    transition: 0.2s;
 }
 
 .navegacao li a:hover{
@@ -95,9 +97,11 @@ ul{
     padding: 0.9rem 1.5rem;
     border-radius: 0.25rem;
     color: #fff;
+    transition: 1s;
 }
 
 #label-infos a:hover{
+    color: #e4e4e4;
     background-color: #900;
 }
 
@@ -147,6 +151,7 @@ ul{
 
 .container02 ul li:hover{
     border-left: 0.25rem solid #ee2211;
+    transition: 0.2s;
 }
 
 /* Rodapé */
@@ -161,7 +166,10 @@ footer{
 
 @media (max-width: 800px){
     .subtitulo{
-        display: none;
+        grid-column: 1 / -1;
+        color: #000;
+        
+        text-align: center;
     }
     .vantagens{
         grid-column: 1 / -1;
@@ -172,6 +180,7 @@ footer{
     #label-infos{
         grid-column: 1 / -1;
         justify-items: center;
+        text-align: center;
     }
     #label-infos h1::after{
         display: none;
