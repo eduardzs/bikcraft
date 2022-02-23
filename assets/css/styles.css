@@ -164,7 +164,7 @@ footer{
 
 /* Responsivo */
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .texto{
         margin: 0 auto;
         grid-column: 1 /-1;
@@ -172,9 +172,12 @@ footer{
     .subtitulo{
         color: #000;
         text-align: center;
+        font-size: 2rem;
+    }
+    .container02{
+        margin: 0 auto;
     }
     .vantagens{
-        margin: 0 auto;
         grid-column: 1 /-1;
     }
     .bicicleta{
