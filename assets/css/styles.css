@@ -168,7 +168,7 @@ footer{
     .subtitulo{
         grid-column: 1 / -1;
         color: #000;
-        
+        justify-content: center;
         text-align: center;
     }
     .vantagens{
