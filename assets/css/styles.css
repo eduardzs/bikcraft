@@ -158,6 +158,7 @@ footer{
 }
 
 /* Responsivo */
+
 @media (max-width: 800px){
     .subtitulo{
         display: none;
