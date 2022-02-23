@@ -111,7 +111,9 @@ ul{
 
 .texto{
     display: grid;
-    align-items: center;
+    align-self: center;
+    padding: 50px;
+
 }
 
 .container02{
@@ -156,4 +158,33 @@ footer{
 }
 
 /* Responsivo */
-
+@media (max-width: 800px){
+    .subtitulo{
+        display: none;
+    }
+    .vantagens{
+        grid-column: 1 / -1;
+    }
+    .bicicleta{
+        grid-column: 1 / -1;
+    }
+    #label-infos{
+        grid-column: 1 / -1;
+        justify-items: center;
+    }
+    #label-infos h1::after{
+        display: none;
+    }
+    .menu img{
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .menu-op li a{
+        background-color: #fff;
+        padding: 10px 15px;
+    }
+    .navegacao{
+        margin-top: 50px;
+        gap: 15px;
+    }
+}
