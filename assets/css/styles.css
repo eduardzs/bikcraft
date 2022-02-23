@@ -165,14 +165,17 @@ footer{
 /* Responsivo */
 
 @media (max-width: 800px){
-    .subtitulo{
-        grid-column: 1 / -1;
-        color: #000;
+    .texto{
         justify-content: center;
+        grid-column: 1 /-1;
+    }
+    .subtitulo{
+        color: #000;
         text-align: center;
     }
     .vantagens{
-        grid-column: 1 / -1;
+        place-self: center;
+        grid-column: 1 /-1;
     }
     .bicicleta{
         grid-column: 1 / -1;
