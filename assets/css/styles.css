@@ -1,20 +1,15 @@
+/* Geral */
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f7f7f7;
     display: grid;
     justify-content: center;
-    gap: 3.125rem;
-}
-
-header{
-    margin: 0 auto;
+    gap: 2.75rem;
 }
 
 a{
@@ -25,148 +20,140 @@ p{
     font-size: 1.25rem;
 }
 
-ol{
+ul{
     list-style: none;
 }
 
 /* Cabeçalho */
 
-.logotipo{
+.menu img{
+    display: block;
     margin: 0 auto;
-    margin-top: 3.75rem;
+    margin-top: 4.125rem;
+    margin-bottom: 4.125rem;
 }
 
 .navegacao{
     display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.navegacao li{
-    list-style: none;
-}
-
-.navegacao a{
+.navegacao li a{
     background-color: #fff;
-    color: #000;
-    padding: 1.0rem 2.5rem;
-    margin-left: 1.25rem;
-    text-align: center;
+    padding: 1rem 2rem;
     border-radius: 0.25rem;
-    text-transform: uppercase;
+    color: #000;
 }
 
-.navegacao a:hover{
-    border: 0.06rem solid red;
+.navegacao li a:hover{
+    border: 0.125rem solid #ee2211;
 }
 
-/* Cabeçalho */
-
-/* Conteúdo */
-
-.bicicleta{
-    max-width: 100%;
-}
+/* Conteudo 01 */
 
 .container01{
-    max-width: 62.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 62.5rem;
 }
 
-.container01 article{
+.bicicleta{
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    object-position: right top;
+}
+
+#label-infos{
     background-color: #fff;
-    padding: 2.5rem;
     display: grid;
     align-items: center;
     justify-items: end;
+    padding: 1.25rem;
+    gap: 1.25rem;
 }
 
-.titulo{
+#label-infos h1{
+    font-size: 2.19rem;
     position: relative;
 }
 
-.titulo::after{
+#label-infos h1::after{
     content: "";
-    width: 3.75rem;
+    width: 4rem;
     height: 0.25rem;
-    background-color: red;
-    position: absolute;
-    top: -2.8rem;
-    right: -4.37rem;
-}
-
-.paragrafo{
-    text-align: center;
-}
-
-.botao{
+    top: -1rem;
+    right: -3.25rem;
     background-color: #ee2211;
-    border: none;
+    position: absolute;
+}
+
+#label-infos a{
+    background-color: #ee2211;
+    padding: 0.9rem 1.5rem;
     border-radius: 0.25rem;
     color: #fff;
-    display: block;
-    padding: 1.0rem 1.9rem;
 }
 
-.botao:hover{
+#label-infos a:hover{
     background-color: #900;
 }
 
-/* Conteúdo */
-
-/* Conteúdo 2 */
+/* Conteudo 02 */
 
 .subtitulo{
     font-size: 4rem;
     color: #c6c6c6;
-    padding: 1.9rem;
     background-image: url("/assets/img/onda.svg");
 }
 
-.container-titulo{
-    background-repeat: no-repeat;
+.texto{
     display: grid;
-    align-self: center;
+    align-items: center;
 }
 
-.container-vantagens{
+.container02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 62.5rem;
+}
+
+.container02 ul{
     background-color: #fff;
-}
-
-.container-vantagens ol li:nth-child(odd){
-    background-color: #f7f7f7;
-}
-
-.container-vantagens ol{
     padding: 0.625rem;
 }
 
-.vantagens{
+.container02 ul li{
     display: grid;
     grid-template-columns: auto 1fr;
-    padding: 1.9rem;
-    gap: 10px;
+    padding: 1.25rem;
 }
 
-.paragrafo-vantagens{
+.container02 img{
+    margin-right: 1.25rem;
+}
+
+.container02 p{
     grid-column: 2;
 }
 
-.icone{
-    padding-right: 1.0rem;
+.container02 ul li:nth-child(odd){
+    background-color: #f7f7f7;
 }
 
-.container-vantagens ol li:hover{
-    border-left: 0.25rem solid red;
+.container02 ul li:hover{
+    border-left: 0.25rem solid #ee2211;
 }
-
-/* Conteúdo 2 */
 
 /* Rodapé */
 
 footer{
-    background-color: #eeee;
+    background-color: #e4e4e4;
     text-align: center;
-    padding: 20px;
+    padding: 0.625rem;
 }
 
-/* Rodapé */
+/* Responsivo */
+
