@@ -1,0 +1,164 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1200px;
+}
+
+p {
+    font-size: 16px;
+}
+
+p,
+h1 {
+    text-wrap: wrap;
+}
+
+/* Estilos Logo */
+.logo {
+    display: grid;
+    place-content: center;
+    height: 200px;
+}
+
+/* Estilos Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    margin: 0px 0px 100px 0px;
+    gap: 20px;
+}
+
+.menu span a {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #000;
+    border: 1px solid transparent;
+}
+
+.menu span a:hover {
+    border: 1px solid #ee2211;
+}
+
+/* Estilos Conteúdo Principal */
+.containerPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+
+    place-content: center;
+}
+.conteudo1 {
+    display: grid;
+    place-items: center end;
+    background-color: #fff;
+    text-align: end;
+    padding: 40px;
+    position: relative;
+}
+
+.detalhe {
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #ee2211;
+    top: 30px;
+    right: -30px;
+}
+
+.conteudo1 h1 {
+    margin: 0px;
+}
+
+.conteudo1 p {
+    font-size: 20px;
+}
+
+.botao {
+    display: grid;
+    background-color: #ee2211;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #781208;
+    color: #c6c6c6;
+}
+
+.bikcraftImagem {
+    display: block;
+    max-width: 100%;
+}
+
+.containerPrincipal .conteudo3 {
+    display: grid;
+    place-content: center end;
+    text-align: end;
+    padding: 20px;
+    color: #c6c6c6;
+    font-size: 40px;
+}
+
+.containerSecundario {
+    display: grid;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center start;
+    padding: 20px;
+    gap: 10px 20px;
+    border: 3px solid transparent;
+}
+
+.info:hover {
+    border-left: 3px solid #ee2211;
+}
+
+.info span {
+    font-weight: bolder;
+    grid-column: 2;
+    font-size: 18px;
+}
+
+.info p {
+    grid-column: 2;
+    margin: 0px;
+}
+
+.infoDescricao1 {
+    background-color: #f7f7f7;
+}
+
+.infoDescricao3 {
+    background-color: #f7f7f7;
+}
+
+/* Rodapé */
+
+.rodape {
+    margin-top: 20px;
+    padding: 30px 0px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.textoRodape {
+    font-size: 20px;
+}
